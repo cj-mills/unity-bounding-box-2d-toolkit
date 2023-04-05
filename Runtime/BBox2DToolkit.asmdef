@@ -4,6 +4,7 @@
       "UnityEngine.UI",
       "TMPro"
     ],
+  "optionalUnityReferences": [],
   "includePlatforms": [],
   "excludePlatforms": [],
   "allowUnsafeCode": false,
