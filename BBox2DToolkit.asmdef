@@ -1,7 +1,7 @@
 {
   "name": "BBox2DToolkit",
   "references": [
-        "TMPro"
+    "TMPro"
   ],
   "optionalUnityReferences": [],
   "includePlatforms": [],
