@@ -1,5 +1,5 @@
 {
-  "name": "BBox2DToolkit",
+  "name": "BoundingBox2DToolkit",
   "references": [
     "TMPro"
   ],
