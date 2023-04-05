@@ -2,7 +2,7 @@
   "name": "BBox2DToolkit",
   "references": [
       "UnityEngine.UI",
-      "TMPro"
+      "GUID:com.unity.textmeshpro"
     ],
   "optionalUnityReferences": [],
   "includePlatforms": [],
