@@ -1,7 +1,7 @@
 {
   "name": "BoundingBox2DToolkit",
   "references": [
-    "TMPro"
+        "Unity.TextMeshPro"
   ],
   "optionalUnityReferences": [],
   "includePlatforms": [],
