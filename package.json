@@ -1,0 +1,28 @@
+{
+    "name": "com.cj-mills.bounding-box-2d-toolkit",
+    "displayName": "Bounding Box 2D Toolkit",
+    "version": "1.0.0",
+    "unity": "2020.3",
+    "description": "A custom Unity package that provides an easy-to-use and customizable solution to work with and visualize 2D bounding boxes on a Unity canvas.",
+    "keywords": [
+        "bounding box",
+        "visualization",
+        "2D",
+        "unity",
+        "canvas",
+        "labels"
+    ],
+    "author": {
+        "name": "Christian Mills",
+        "email": "christian@christianjmills.com",
+        "url": "https://christianjmills.com/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cj-mills/bounding-box-2d-toolkit.git"
+    },
+    "dependencies": {
+        "com.unity.textmeshpro": "3.0.6"
+    },
+    "license": "MIT"
+}
