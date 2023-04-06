@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-namespace BBox2DToolkit
+namespace CJM.BBox2DToolkit
 {
     /// <summary>
     /// BoundingBox2DVisualizer is a MonoBehaviour class responsible for displaying 2D bounding boxes, labels, and label backgrounds
