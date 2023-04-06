@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace BBox2DToolkit
+namespace CJM.BBox2DToolkit
 {
     public class DependencyDefineSymbolAdder
     {
