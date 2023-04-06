@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 
 
-namespace BBox2DToolkit
+namespace CJM.BBox2DToolkit
 {
     /// <summary>
     /// A struct that represents a 2D bounding box.
