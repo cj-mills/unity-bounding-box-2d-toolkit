@@ -1,5 +1,5 @@
 {
-  "name": "BoundingBox2DToolkit",
+  "name": "CJM.BoundingBox2DToolkit",
   "references": [
         "Unity.TextMeshPro"
   ],
