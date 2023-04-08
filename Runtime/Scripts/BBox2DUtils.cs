@@ -147,7 +147,10 @@ namespace CJM.BBox2DToolkit
             // Calculate the scale value between the in-game screen and input dimensions
             float minImgScale = minScreenDim / minInputDim;
             // Calculate the scale value between the in-game screen and display
-            float displayScale = Screen.height / screenDims.y;
+            float displayScaleX = Screen.width / screenDims.x;
+            float displayScaleY = Screen.height / screenDims.y;
+            float displayScale = Mathf.Min(displayScaleX, displayScaleY);
+
 
             // Scale bounding box to in-game screen resolution and flip the bbox coordinates vertically
             float x0 = (boundingBox.x0 + offset.x) * minImgScale;
@@ -161,7 +164,7 @@ namespace CJM.BBox2DToolkit
                 x0 = screenDims.x - x0 - width;
             }
 
-            // Scale bounding boxes to display resolution
+            // Scale bounding box to display resolution
             boundingBox.x0 = x0 * displayScale;
             boundingBox.y0 = y0 * displayScale;
             boundingBox.width = width * displayScale;
@@ -169,6 +172,7 @@ namespace CJM.BBox2DToolkit
 
             // Offset the bounding box coordinates based on the difference between the in-game screen and display
             boundingBox.x0 += (Screen.width - screenDims.x * displayScale) / 2;
+            boundingBox.y0 += (Screen.height - screenDims.y * displayScale) / 2;
 
             return boundingBox;
         }
