@@ -1,6 +1,9 @@
 # Bounding Box 2D Toolkit
 Bounding Box 2D Toolkit is a Unity package that provides an easy-to-use and customizable solution to work with and visualize 2D bounding boxes on a Unity canvas.
 
+## Demo Video
+https://user-images.githubusercontent.com/9126128/230750644-6f234dfc-27dc-40e2-a354-286b1e38dcf6.mp4
+
 ## Features
 
 - Display 2D bounding boxes with customizable transparency and colors
