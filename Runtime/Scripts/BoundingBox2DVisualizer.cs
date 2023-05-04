@@ -38,8 +38,7 @@ namespace CJM.BBox2DToolkit
         [Tooltip("Transparency value for the bounding boxes, ranging from 0 (completely transparent) to 1 (completely opaque)")]
         [SerializeField, Range(0f, 1f)] private float bboxTransparency = 1f;
 
-        // If you want to set default assets from your project, use the GUID of the asset
-        // You can find the GUID in the .meta file of the asset (open it with a text editor)
+        // GUIDs of the default assets for the bounding box, label, label background, and dot prefabs
         private const string BoundingBoxPrefabGUID = "be0edeacc0f249fab31ac75426ad8a2a";
         private const string LabelPrefabGUID = "4e39b47d4b984862aeab14255855fcc9";
         private const string LabelBackgroundPrefabGUID = "9074ea186151430084312ba891bad58e";
