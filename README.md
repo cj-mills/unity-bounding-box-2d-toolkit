@@ -14,6 +14,12 @@ https://user-images.githubusercontent.com/9126128/230750644-6f234dfc-27dc-40e2-a
 
 
 
+## Code Walkthrough
+
+* [Code Walkthrough: Unity Bounding Box 2D Toolkit Package](https://christianjmills.com/posts/unity-bounding-box-2d-toolkit-walkthrough/)
+
+
+
 ## Features
 
 - Display 2D bounding boxes with customizable transparency and colors
