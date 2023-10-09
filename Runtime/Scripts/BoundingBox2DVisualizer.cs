@@ -116,8 +116,32 @@ namespace CJM.BBox2DToolkit
         /// <returns>A Vector2 object representing the local point in the RectTransform space of the canvas</returns>
         private Vector2 ScreenToCanvasPoint(RectTransform canvas, Vector2 screenPoint)
         {
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(canvas, screenPoint, null, out Vector2 localPoint);
-            return localPoint;
+            // Get the Canvas component from the provided RectTransform
+            Canvas canvasComponent = canvas.parent.GetComponent<Canvas>();
+
+            if (!canvasComponent)
+            {
+                throw new System.Exception("Provided RectTransform does not belong to a Canvas.");
+            }
+
+            Camera associatedCamera = null;
+
+            // If the canvas is in Screen Space - Camera or World Space, use its associated camera
+            if (canvasComponent.renderMode == RenderMode.ScreenSpaceCamera || canvasComponent.renderMode == RenderMode.WorldSpace)
+            {
+                associatedCamera = canvasComponent.worldCamera;
+                if (!associatedCamera)  // if there's no associated camera
+                {
+                    throw new System.Exception("Canvas requires a camera for Screen Space - Camera or World Space render modes.");
+                }
+            }
+
+            if (RectTransformUtility.ScreenPointToLocalPointInRectangle(canvas, screenPoint, associatedCamera, out Vector2 localPoint))
+            {
+                return localPoint;
+            }
+
+            return Vector2.zero;  // default return if conversion fails
         }
 
         /// <summary>
