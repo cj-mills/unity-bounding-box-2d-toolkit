@@ -176,5 +176,14 @@ namespace CJM.BBox2DToolkit
 
             return boundingBox;
         }
+
+
+        public static BBox2DInfo[] GetBBox2DInfos(List<BBox2D> proposals, List<int> proposalIndices, List<(string, Color)> colormapList)
+        {
+            return proposalIndices
+                .Select(index => proposals[index])
+                .Select(bbox => new BBox2DInfo(bbox, colormapList[bbox.index].Item1, colormapList[bbox.index].Item2))
+                .ToArray();
+        }
     }
 }
